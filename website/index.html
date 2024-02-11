@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Grant's Website</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <style>
+            
+
+            body{
+                font-family: 'Times New Roman', Times, serif;
+                background-image: url('275.GIF');
+
+            }
+            h1{
+                text-align: center;
+                color: yellow;
+            }
+            p{
+                color: yellow;
+                animation-duration: 3s;
+                animation-name: slidein;
+                text-align: center;
+            }
+
+            .sidenav {
+                height: 100%;
+                width: 160px;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background-color: #111;
+                background-image: url("stars.gif");
+                overflow-x: hidden;
+                padding-top: 20px;
+            }
+
+            .sidenav a {
+            padding: 35px;
+            text-align: center;
+            text-decoration: underline;
+            font-size: 25px;
+            color: yellow;
+            display: block;
+            }
+
+            a:hover {
+            color: #f1f1f1;
+            }
+
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+            
+            @keyframes slidein {
+                from {
+                    margin-left: 100%;
+                    width: 300%;
+                }
+
+                to {
+                    margin-left: 0%;
+                    width: 100%
+                }
+            }
+            
+        </style>
+    </head>
+    <body>
+
+        <h1>Witty's World</h1>
+        <p>Hello world! This is my personal website!</p>
+        
+    </body>
+    <div class="sidenav">
+        <a href="#home">
+            <img class="w3-image" src="home.gif">
+            Home
+        </a>
+        <a href="#about">
+            <img class="w3-image" src="computer.gif">
+            About
+        </a>
+        <a href="#hyperlinks">
+            <img class="w3-image" src="car.gif">
+            Hyperlinks
+        </a>
+        <a href="#list">
+            <img class="w3-image" src="book.gif">
+            Guest List
+        </a>
+    </div>
+</html>
